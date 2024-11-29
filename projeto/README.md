@@ -1,4 +1,4 @@
-## Teste Técnico casar.com
+## Teste Técnico casar.com 
 
 Primeiro vou listar as tecnologias que usei: NextJs, Material Tailwind, Tailwind, Axios, Json-Server, Jest, Concurrently, Typescript.
 O Json-Server eu usei para simular um servidor para persistir os dados e adicionar/remover favoritos em um arquivo Json.
