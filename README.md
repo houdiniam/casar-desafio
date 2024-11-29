@@ -4,6 +4,10 @@ Primeiro vou listar as tecnologias que usei: NextJs, Material Tailwind, Tailwind
 O Json-Server eu usei para simular um servidor para persistir os dados e adicionar/remover favoritos em um arquivo Json.
 Concurrently utilizei para rodar mais de um script de uma vez só.
 
+De início baixe as dependências com:
+```bash
+npm install
+```
 Para iniciar o projeto, basta rodar:
 
 ```bash
