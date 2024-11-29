@@ -26,6 +26,7 @@ interface Repository {
     id: string;
 }
 
+// Componente onde acontece a exibição dos repositórios do usuário.
 const Repositorios: React.FC<Favs> = ({ user, repositories, color }) => {
 
     const [favorites, setFavorites] = useState<Favorite[]>([]);

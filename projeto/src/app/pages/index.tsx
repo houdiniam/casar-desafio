@@ -22,6 +22,7 @@ interface Repository {
 }
 
 const Home: React.FC = () => {
+    // const para me auxiliar em mostrar os dados 
     const [userData, setUserData] = useState<GitHubUser | null>(null);
     const [error, setError] = useState<string>('');
     const [repositories, setRepositories] = useState<Repository[]>([]);
@@ -30,6 +31,7 @@ const Home: React.FC = () => {
     const [showFavorites, setshowFavorites] = useState(false);
     const [nomeUser, setNomeUser] = useState<string>("");
 
+    // Função para mostrar os repositórios favoritos
     const goFavs = async () => {
         setshowFavorites(true);
         setUserData(null);
@@ -39,6 +41,7 @@ const Home: React.FC = () => {
         setColor(colorLang);
     }
 
+    // Função para pegas o user digitado, seus repositórios e a cor das linguaguens
     const fetchUser = async (username: string) => {
         setError('');
         setUserData(null);
@@ -62,6 +65,7 @@ const Home: React.FC = () => {
         }
     };
 
+    // Função para voltar a barra de pesquisa a partir do menu disponível no mobile
     const userNull = () => {
         setUserData(null);
         setshowFavorites(false);

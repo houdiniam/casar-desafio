@@ -3,8 +3,6 @@ import { fetchFavs } from "../lib/fetchFavs";
 import axios from "axios";
 
 interface Favs {
-    user: any;
-    repositories: any;
     color: any;
 }
 
@@ -18,7 +16,8 @@ type Favorite = {
     color: string;
 };
 
-const Favoritos: React.FC<Favs> = ({ user, repositories, color }) => {
+// Componente onde acontece a exibição dos favoritos
+const Favoritos: React.FC<Favs> = ({ color }) => {
 
     const [favorites, setFavorites] = useState<Favorite[]>([]);
     useEffect(() => {

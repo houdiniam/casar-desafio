@@ -42,12 +42,13 @@ type Favorite = {
     color: string;
 };
 
+// Componente onde acontece a exibição de todas as informações, baseado em que state tá preenchido e em qual foi a ação do user
 const UserDetails: React.FC<UserDetailsProps> = ({ user, repositories, error, color, loading, showFavorites, nomeUser }) => {
 
     if (error) {
         return (
             <div className="max-w-5xl mx-auto mt-12 px-4 sm:text-left text-center grid justify-center">
-                <div className="w-full max-w-3xl mx-auto text-gray-600 -mt-10 sm:-mt-0">
+                <div className="w-full max-w-3xl mx-auto text-gray-600 text-center -mt-10 sm:-mt-0">
                     <h3 className="text-2xl semi-bold mt-2 text-favorito">"{nomeUser}"</h3>
                     <h3 className="text-2xl font-bold mt-2">{error}</h3>
                     <p className="md:px-4 sm:px-0 leading-relaxed">Verifique se a escrita está correta ou tente novamente</p>
@@ -100,7 +101,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({ user, repositories, error, co
     }
     if (showFavorites && !user) {
         return (
-            <Favorite user={user} repositories={repositories} color={color} />
+            <Favorite color={color} />
         )
     }
 };

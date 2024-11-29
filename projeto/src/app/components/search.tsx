@@ -6,6 +6,7 @@ interface SearchInputProps {
     userNull: () => void;
 }
 
+// Componente onde exibo as navbars com barra de pesquisa e botão de favoritos.
 const SearchInput: React.FC<SearchInputProps> = ({ onSearch, goFavs, userNull }) => {
     const [username, setUsername] = useState<string>('');
     const [auxMobile, setAuxMobile] = useState<boolean>(true);
