@@ -20,6 +20,7 @@ API:  [http://localhost:5000](http://localhost:5000)
 Uma vez rodando você poderá buscar, adiconar/remover favoritos e listar todos os repositórios salvos.
 Para adicionar um repositório aos favoritos é só clicar no coração quando estiver cinza. Para remover, clicar novamente(coração verde).
 A persistência de dados se dá em um arquivo json(db.json).
+Responsividade para mobile.
 
 Para rodar os testes Jest basta colocar:
 ```bash
